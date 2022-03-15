@@ -21,8 +21,8 @@
     --transition: all 400ms ease;
 
     --container-width-lg: 75%;
-    --containter-width-md: 86%;
-    --containter-width-ms: 90%;
+    --container-width-md: 86%;
+    --container-width-ms: 90%;
 }
 
 html {
@@ -110,4 +110,29 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+
+/* ======================= MEDIA QUERIES (SMALL DEVICES) ================ */
+
+@media screen and (max-width: 600) {
+    .container {
+        width: var(--container-width-ms);
+    }
+
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* ======================= MEDIA QUERIES (MEDIUM DEVICES) ================ */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
 }
